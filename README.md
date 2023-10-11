@@ -3,6 +3,9 @@
 This plugin for [vite](https://vitejs.dev/) aims to set the
 [server.origin](https://vitejs.dev/config/server-options.html#server-origin)
 configuration option automatically to the external URL of the vite dev server.
+
+Setting server.origin is required in a backend integration scenario during development. In such case, the HTML document is served from one domain and references vite assets from the vite dev server domain. 
+
 This leads to the vite dev server serving additional assets (e. g. referenced
 images or font files) during development instead of the main application server.
 
